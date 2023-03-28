@@ -1,0 +1,154 @@
+body {
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+
+    height: 12vh;
+    width: 100%;
+
+    border-bottom: 1px solid #1e1e1e;
+}
+
+.logo-img {
+    height: 80%;
+}
+
+.page-title {
+    font-size: 32px;
+    margin-left: 32px;
+}
+
+.body {
+    height: 84vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 32px;
+    padding: 32px;
+}
+
+.add-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 24px;
+
+    height: 100%;
+}
+
+.add-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 32px 32px 32px;
+    border-radius: 8px;
+    border: 1px solid rgba(30, 30, 30, 0.5);
+}
+
+.add-form input, textarea{
+    width: 100%;
+    height: 36px;
+    padding: 8px;
+    font-size: 20px;
+    border-style: none;
+    border: 1px solid rgba(30, 30, 30, 0.5);
+    border-radius: 8px;
+    background: #F1F1F1;
+}
+
+.add-form textarea {
+    height: 128px;
+}
+
+.data-picker {
+    display: flex;
+    align-items: center;
+}
+
+.data-picker input {
+    margin: 0px 8px;
+    width: 100px;
+}
+
+.add-button {
+    font-weight: 700;
+    font-size: 28px;
+    padding: 16px 64px;
+    border-style: none;
+    color: white;
+    background: #2C3593;
+
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: #1f2566;
+}
+
+.lists-container {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 32px;
+}
+
+.lists-container span {
+    height: 80%;
+    max-height: 80vh;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 32px;
+    border: 1px solid rgba(30, 30, 30, 0.5);
+    height: 100%;
+    max-height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: rgb(252, 252, 206);
+}
+
+.empty-list {
+    height: fit-content;
+    color: white;
+    background: #2C3593;
+    padding: 16px;
+    width: 100%;
+}
+
+.list-item {
+    display: flex;
+    background-color: #F1F1F1;
+    width: 100%;
+    padding: 16px;
+    border: 1px solid rgba(30, 30, 30, 0.5);
+    justify-content: space-around;
+    align-items: center;
+    height: fit-content;
+    word-break: break-word;
+    margin-bottom: 16px;
+}
+
+.list button {
+    height: 48px;
+    min-width: fit-content;
+    margin-left: 16px;
+    padding: 16px 16px;
+    border-style: none;
+    color: white;
+    background: #2C3593;
+
+    cursor: pointer;
+}

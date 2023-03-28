@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Aula boa demais</title>
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv=”Content-Type” content=”text/html; charset=iso-8859-1″>
+</head>
+
+<body onload="main()" >
+    <div class="header">
+        <img src="assets/logo-uniso.png" class="logo-img">
+        <h1 class="page-title">Tarefas e Atividades</h1>
+    </div>
+
+    <div class="body">
+        <div class="add-form">
+            <form>
+                <h2>Adicionar nova tarefa</h2>
+                <br>
+                <input placeholder="Título da tarefa" id="nome">
+                <br>
+                <textarea placeholder="Descrição" rows="8" id="descricao"></textarea>
+                <br>
+                <h2>Data de entrega</h2>
+                <span class="data-picker">
+                    <input placeholder="Dia" id="dia">
+                    <p>/</p>
+                    <input placeholder="Mês" id="mes">
+                    <p id="currentYear"></p>
+                </span>
+                <br>
+                <button class="add-button" onclick="addToList()">ADICIONAR</button>
+            </form>
+        </div>
+
+        <div class="lists-container">
+            <span>
+                <h2>Incompletas</h2>
+                <div class="list" id="toDoList">
+                    
+                </div>
+            </span>
+            <span>
+                <h2>Completas</h2>
+                <div class="list" id="doneList">
+
+                </div>
+            </span>
+        </div>
+    </div>
+</body>
